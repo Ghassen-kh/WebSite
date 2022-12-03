@@ -1,4 +1,75 @@
-.test {
-  width: 50%;
-  background-color: aqua;
+.website-side-nav {
+  background-color: #022a38;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.website-photo {
+  margin-top: 50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.photo-img {
+  border-radius: 50%;
+  border: solid 3px rgb(114, 112, 112);
+}
+img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.website-wrapper {
+  position: relative;
+}
+.website-wrapper:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/quality-level.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.website-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.website-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.website-intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.website-desc {
+  color: rgb(103, 226, 103);
+}
+
+.contact-icons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
