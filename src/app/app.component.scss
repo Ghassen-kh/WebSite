@@ -22,49 +22,11 @@ img {
   height: 100%;
 }
 
-.website-wrapper {
-  position: relative;
-}
-.website-wrapper:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/quality-level.jpg");
-  opacity: 0.9;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-}
-
 .website-container {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr;
-}
-
-.website-content {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-}
-
-.website-intro {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.website-desc {
-  color: rgb(103, 226, 103);
 }
 
 .contact-icons {
@@ -99,4 +61,10 @@ img {
   .warning-message {
     display: none;
   }
+}
+a {
+  color: white;
+}
+.selected-link {
+  color: #20c997;
 }

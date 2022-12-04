@@ -54,12 +54,24 @@
           gap: 20px;
         "
       >
-        <span style="color: rgb(0, 102, 128)">Home</span>
-        <span class="test">About me</span>
-        <span>What I do</span>
-        <span>Resume</span>
-        <span>Portfolio</span>
-        <span>Contacts</span>
+        <a routerLink="home" routerLinkActive="selected-link">
+          <span>Home</span>
+        </a>
+        <a routerLink="about" routerLinkActive="selected-link">
+          <span>About me</span>
+        </a>
+        <a routerLink="activity" routerLinkActive="selected-link">
+          <span>What I do</span>
+        </a>
+        <a routerLink="resume" routerLinkActive="selected-link">
+          <span>Resume</span>
+        </a>
+        <a routerLink="portfolio" routerLinkActive="selected-link">
+          <span>Portfolio</span>
+        </a>
+        <a routerLink="contacts" routerLinkActive="selected-link">
+          <span>Contacts</span>
+        </a>
       </div>
     </div>
     <div class="contact-icons">
@@ -75,23 +87,7 @@
       ></a>
     </div>
   </div>
-  <div class="website-wrapper">
-    <div class="website-content">
-      <div></div>
-      <div class="website-intro">
-        <div class="website-desc" style="font-weight: 400; font-size: x-large">
-          Welcome
-        </div>
-        <br />
-        <div
-          class="website-desc"
-          style="font-weight: bolder; font-size: xx-large"
-        >
-          I'm Samar Soltani
-        </div>
-        <br />
-        <div style="font-weight: 500; font-size: large">Based in Tunisia</div>
-      </div>
-    </div>
+  <div class="website-wrapper" id="website-wrapper">
+    <router-outlet></router-outlet>
   </div>
 </div>

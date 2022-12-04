@@ -1,0 +1,39 @@
+.about-me-card {
+  margin-top: 100px;
+  width: 50%;
+  height: 30%;
+  box-shadow: rgba(100, 247, 112, 0.4) -5px 5px,
+    rgba(100, 247, 112, 0.4) -10px 10px, rgba(100, 247, 112, 0.4) -15px 15px,
+    rgba(100, 247, 112, 0.4) -20px 20px, rgba(100, 247, 112, 0.4) -25px 25px;
+  font-family: cursive;
+  font-weight: 600;
+}
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.about-me-name {
+  color: #20c997;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+}
+#about-me-container {
+  bottom: 15%;
+  position: absolute;
+  animation: linear;
+  animation-name: run;
+  animation-duration: 7s;
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 35%;
+  }
+  100% {
+    left: 0;
+  }
+}
