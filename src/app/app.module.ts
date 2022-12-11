@@ -10,6 +10,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { MatCardModule } from '@angular/material/card';
     PortfolioComponent,
     ContactsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatCardModule],
+  imports: [BrowserModule, AppRoutingModule, MatCardModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })

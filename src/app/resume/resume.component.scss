@@ -1,0 +1,41 @@
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 5px;
+  padding: 0px 10px 0 25px;
+}
+.activity-container {
+  background-color: blue;
+}
+
+.skills-header {
+  color: rgb(4, 165, 4);
+  font-family: Georgia, serif;
+  display: flex;
+  align-items: center;
+}
+
+.skills-details-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub-header {
+  font-size: small;
+  font-weight: 600;
+  height: 100%;
+}
+.sub-sub-header {
+  font-size: x-small;
+  font-weight: 600;
+  height: 100%;
+}
