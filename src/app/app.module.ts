@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,9 +11,13 @@ import { ActivityComponent } from './activity/activity.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
+
+import { ResumeActivityComponent } from './resume/resume-activity/resume-activity.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { ResumeActivityContentComponent } from './resume/resume-activity-content/resume-activity-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +27,18 @@ import { MatIconModule } from '@angular/material/icon';
     ResumeComponent,
     PortfolioComponent,
     ContactsComponent,
+    ResumeActivityComponent,
+    ResumeActivityContentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatCardModule, MatIconModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatExpansionModule,
+    MatCardModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    InfiniteScrollModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

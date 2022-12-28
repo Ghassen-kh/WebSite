@@ -1,15 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, ViewRef } from '@angular/core';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
+  experienceExpanded: boolean = false;
+  diplomaExpanded: boolean = false;
+  internshipExpanded: boolean = false;
+  trainingExpanded: boolean = false;
 
-  constructor() { }
+  constructor(private cdr: ChangeDetectorRef) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  onInternshipExpanded(expanded: boolean) {
+    this.internshipExpanded = expanded;
+    this.detectChanges();
+  }
+  onExperienceExpanded(expanded: boolean) {
+    this.experienceExpanded = expanded;
+    this.detectChanges();
+  }
+  onDiplomaExpanded(expanded: boolean) {
+    this.diplomaExpanded = expanded;
+    this.detectChanges();
+  }
+  onTrainingExpanded(expanded: boolean) {
+    this.trainingExpanded = expanded;
+    this.detectChanges();
   }
 
+  detectChanges() {
+    if (!(this.cdr as ViewRef).destroyed) this.cdr.detectChanges();
+  }
 }

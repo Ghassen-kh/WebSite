@@ -92,5 +92,43 @@
       </div>
     </div>
   </div>
-  <div class="activity-container"></div>
+  <div class="activity-container">
+    <resume-activity
+      style="height: 100%"
+      (intershipExpandedEvent)="onInternshipExpanded($event)"
+      (experienceExpandedEvent)="onExperienceExpanded($event)"
+      (diplomaExpandedEvent)="onDiplomaExpanded($event)"
+      (trainingExpandedEvent)="onTrainingExpanded($event)"
+    ></resume-activity>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: internshipExpanded ? 'hidden' : 'visible' }"
+      style="top: 20%; right: 10%"
+    >
+      “Anyone who has never made a mistake has never tried anything new.” ―
+      Albert Einstein
+    </div>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: experienceExpanded ? 'hidden' : 'visible' }"
+      style="top: 20%; right: 60%"
+    >
+      “The only source of knowledge is experience.” ― Albert Einstein
+    </div>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: diplomaExpanded ? 'hidden' : 'visible' }"
+      style="top: 70%; right: 60%"
+    >
+      “The only thing that interferes with my learning is my education.” ―
+      Albert Einstein
+    </div>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: trainingExpanded ? 'hidden' : 'visible' }"
+      style="top: 70%; right: 10%"
+    >
+      “any fool can know. the point is to understand. ” ― Albert Einstein
+    </div>
+  </div>
 </div>
