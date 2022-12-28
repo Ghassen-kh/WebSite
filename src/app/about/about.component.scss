@@ -20,11 +20,11 @@
   font-family: "Poppins", sans-serif;
 }
 #about-me-container {
-  bottom: 15%;
+  bottom: 12%;
   position: absolute;
   animation: linear;
   animation-name: run;
-  animation-duration: 7s;
+  animation-duration: 3s;
 }
 @keyframes run {
   0% {
@@ -36,4 +36,17 @@
   100% {
     left: 0;
   }
+}
+
+.personality-desc {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: small;
+  border: solid 2px rgb(6, 135, 6);
 }

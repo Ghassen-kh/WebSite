@@ -1,16 +1,69 @@
-<div class="about-me-container" id="about-me-container">
-  <mat-card class="about-me-card">
-    <p>
-      I'm <span class="about-me-name"> Samar Soltani</span>, a quality control
-      engineer I help you supervising the staff and product development process
-      to ensure that the product developed meets quality standards, efficiency
-      standards, and customer satisfaction as well. Thousands of clients have
-      procured exceptional results while working with our dedicated team. My
-      main task is to determine whether the finished product meets the quality
-      standards and find the root cause of the defective products and come up
-      with techniques to overcome those defects. I also work with all other
-      departments to coordinate and ensure product quality standards are met
-      regularly.
-    </p>
-  </mat-card>
+<div
+  class="about-container"
+  style="width: 100%; height: 100%; position: relative"
+>
+  <div
+    *ngFor="let personnality of personnalityDescTop"
+    class="personality-desc"
+    [ngStyle]="{
+      'right.%': personnality.progress,
+      'background-color': personnality.color,
+      'top.%': 5,
+      color: 'rgb(6, 135, 6)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div
+    *ngFor="let personnality of personnalityDescBottom"
+    class="personality-desc"
+    [ngStyle]="{
+      'right.%': personnality.progress,
+      'background-color': personnality.color,
+      'top.%': 75,
+      color: 'rgb(168, 236, 168)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div
+    *ngFor="let personnality of personnalityDescLeft"
+    class="personality-desc"
+    [ngStyle]="{
+      'top.%': personnality.progress,
+      'background-color': personnality.color,
+      'right.%': 80,
+      color: 'rgb(168, 236, 168)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div
+    *ngFor="let personnality of personnalityDescRight"
+    class="personality-desc"
+    [ngStyle]="{
+      'top.%': personnality.progress,
+      'background-color': personnality.color,
+      'right.%': 10,
+      color: 'rgb(6, 135, 6)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div class="about-me-container" id="about-me-container">
+    <mat-card class="about-me-card">
+      <div>
+        I'm <span class="about-me-name"> Samar Soltani</span>, a quality control
+        engineer I help you supervising the staff and product development
+        process to ensure that the product developed meets quality standards,
+        efficiency standards, and customer satisfaction as well. Thousands of
+        clients have procured exceptional results while working with our
+        dedicated team. My main task is to determine whether the finished
+        product meets the quality standards and find the root cause of the
+        defective products and come up with techniques to overcome those
+        defects. I also work with all other departments to coordinate and ensure
+        product quality standards are met regularly.
+      </div>
+    </mat-card>
+  </div>
 </div>

@@ -1,0 +1,17 @@
+.activity-container:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/samar-engineer.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.activity-container {
+  position: relative;
+  height: 100%;
+}
