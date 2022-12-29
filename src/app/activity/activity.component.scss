@@ -15,3 +15,39 @@
   position: relative;
   height: 100%;
 }
+
+.activity-desc {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(73, 131, 131);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(4, 31, 80);
+  font-family: cursive;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chem-container {
+  background-image: url("../../assets/chem-club.png");
+  background-size: cover;
+}
+
+.jei-container {
+  background-image: url("../../assets/junior-ese.jpg");
+  background-size: cover;
+}
+
+.aeroday-container {
+  background-image: url("../../assets/aeroday.jpg");
+  background-size: cover;
+}
+
+.four-c-container {
+  background-image: url("../../assets/4c.png");
+  background-size: cover;
+}

@@ -19,18 +19,27 @@
 
 .window-container {
   position: absolute;
-  width: 300px;
-  height: 200px;
-  top: 80px;
-  left: 80px;
-  background-color: white;
-}
-.window-container:before {
-  content: " ";
-  display: block;
+  justify-content: space-between;
+  display: flex;
   width: 300px;
   height: 200px;
   border: 10px solid transparent;
   background-color: white;
   border-image: url("../../assets/wood.jpg") 50 round;
+  top: 80px;
+  left: 80px;
+  align-items: center;
+}
+
+.achievement-desc {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: medium;
+  padding-bottom: 10px;
+}
+
+.button-container {
+  position: absolute;
+  top: 120%;
+  left: 10%;
 }

@@ -18,6 +18,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ResumeActivityContentComponent } from './resume/resume-activity-content/resume-activity-content.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CertificateContentComponent } from './certificate-content/certificate-content.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +33,7 @@ import { ResumeActivityContentComponent } from './resume/resume-activity-content
     ContactsComponent,
     ResumeActivityComponent,
     ResumeActivityContentComponent,
+    CertificateContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +43,8 @@ import { ResumeActivityContentComponent } from './resume/resume-activity-content
     MatIconModule,
     BrowserAnimationsModule,
     InfiniteScrollModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
