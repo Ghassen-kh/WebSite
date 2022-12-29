@@ -16,3 +16,54 @@
   position: relative;
   height: 100%;
 }
+
+.greeting-container {
+  position: absolute;
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: 900;
+  left: 5%;
+  bottom: 10%;
+  color: rgb(4, 39, 4);
+}
+.linkedin-desc-container {
+  position: absolute;
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: 900;
+  left: 6%;
+  top: 35%;
+  color: rgb(208, 201, 250);
+}
+.linkedin-container {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("../../assets/linkedin.png");
+  cursor: pointer;
+  background-size: cover;
+}
+
+.github-desc-container {
+  position: absolute;
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: 900;
+  left: 77%;
+  top: 35%;
+  color: rgb(208, 201, 250);
+}
+.github-container {
+  position: absolute;
+  left: 75%;
+  top: 10%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("../../assets/github.png");
+  cursor: pointer;
+  background-size: cover;
+}
